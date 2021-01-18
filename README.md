@@ -20,7 +20,7 @@
 
 
   ## Installation Instructions: 
-  Visit the heroku application to see functionality. https://powerful-retreat-73418.herokuapp.com/
+  In the terminal run npm install. To see app otherwise visit the heroku application to see functionality. https://powerful-retreat-73418.herokuapp.com/
 
 
   ## Test: 
