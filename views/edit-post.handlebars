@@ -1,0 +1,24 @@
+<article>
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <section class="card-post">
+        <div class="card-post-header">
+            <h2>Edit Post</h2>
+            <div class="meta">
+                by you on {{format_date post.created_at}}
+            </div>
+        </div>
+        <form>
+            <div>
+                <label for="post-title">Title</label>
+                <input class="card-input" name="post-title" type="text" value="{{post.title}}" />
+            </div>
+            <div>
+                <label for="post-content">Content</label>
+                <textarea class="card-input-textarea" name="post-content" value="{{post.post_content}}"></textarea>
+            </div>
+
+            <button class="card-button" type="submit" id="edit-post-btn">Save post</button>
+            <button class="card-button" type="button" id="delete-post-btn">Delete post</button>
+        </form>
+    </section>
+</article>
