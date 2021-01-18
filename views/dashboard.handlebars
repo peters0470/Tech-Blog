@@ -1,0 +1,16 @@
+<section>
+    {{#if posts.length}}
+    <section>
+        <ul class="post-list">
+            {{#each posts as |post|}}
+            <li>
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">{{> post-info-list post}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </section>
+    {{/if}}
+    <div class="new-post-button-div">
+        <a class="new-post-button" href="../new-post">New Post</a>
+    </div>
+</section>

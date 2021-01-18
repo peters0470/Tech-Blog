@@ -14,15 +14,22 @@
       <nav class="nav-bar">
         <a href="/">Home</a>
         <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
         <a href="/login">Login</a>
+        {{/if}}
       </nav>
+      {{#unless loggedIn}}
       <div class="logo-div">
         <h1>The Tech Blog</h1>
       </div>
+      {{/unless}}
+      {{#if loggedIn}}
       <div class="logo-div">
         <h1>Your Dashboard</h1>
       </div>
+      {{/if}}
     </header>
     <main>
       {{{ body }}}
@@ -31,6 +38,10 @@
       Thanks for visiting!
     </footer>
   </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>

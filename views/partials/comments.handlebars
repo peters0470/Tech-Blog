@@ -1,0 +1,19 @@
+<section class="card">
+    <div class="card-header">
+        </br>
+    </div>
+    <div class="comments">
+        {{#each this}}
+        <section class="comment">
+            <div class="text">
+                {{comment_text}}
+            </div>
+            <div class="meta">
+                {{user.username}} on {{format_date created_at}}
+            </div>
+        </section>
+        {{/each}}
+
+    </div>
+</section>
+<script src="/javascript/comment.js"></script>

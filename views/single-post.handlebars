@@ -1,3 +1,9 @@
+{{> post-info post}}
+
+{{#if loggedIn}}
+{{#if comments.length}}
+{{> comments post.comments}}
+{{/if}}
 <section class="card">
 <form class="comment-form">
   <div>
@@ -7,3 +13,8 @@
   <button class="card-button" type="submit" class="btn" id="comment-btn">Create</button>
 </form>
 </section>
+{{/if}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
