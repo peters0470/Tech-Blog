@@ -1,0 +1,16 @@
+:root{
+    --primary-color: rgb(38, 82, 27);
+    --secondary-color: #e6ffe6;
+  }
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+    }
